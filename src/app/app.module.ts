@@ -8,17 +8,23 @@ import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { routes } from './app.routes';
 
+import { CarouselModule } from 'angular4-carousel';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     CollectionComponent,
     ProductComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     routes,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

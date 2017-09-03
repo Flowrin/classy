@@ -1,0 +1,168 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+$family:"FontAwesome";
+#social {
+  margin: 30px 10px 10 px 10px;
+  text-align: center;
+}
+h4{
+    font-size: 50px;
+    
+    margin:  1% 0 1% 0;
+}
+
+.smGlobalBtn { 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; 
+    box-shadow: 0 3px 3px #999;
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+
+.facebookBtn{
+    background: white;
+}
+
+.facebookBtn:before{ 
+    font-family: $family;
+    color:grey;
+    content: "\f09a"; 
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #4060A5;
+    border-color: #4060A5; 
+}
+
+.twitterBtn{
+    background: white;
+}
+
+.twitterBtn:before{
+      font-family: $family;
+      color:grey;
+      content: "\f099"; 
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #00ABE3;
+      border-color: #00ABE3;
+}
+
+
+.googleplusBtn{
+    background: white;
+}
+
+.googleplusBtn:before{
+      font-family: $family;
+      color:grey;
+      content: "\f0d5"; 
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #e64522;
+      border-color: #e64522;
+}
+
+
+.pinterestBtn{
+    background: white;
+}
+
+.pinterestBtn:before{
+      font-family: $family;
+      color:grey;
+      content: "\f0d2"; 
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #cb2027;
+      border-color: #cb2027;
+}
+
+
+.tumblrBtn{
+    background: white;
+}
+
+.tumblrBtn:before{
+      font-family: $family;
+      color:grey;
+      content: "\f173"; 
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background:#3a5876;
+      border-color: #3a5876;
+}
+
+
+/**
+ * the sticky footer mixin
+ **/
+ @mixin sticky-footer($footer-height, $wrapper-selector: unquote("#wrapper"), $container-selector: unquote("#container"), $footer-selector: unquote("#footer")) {
+    html, body {
+      height: 100%;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    #{$wrapper-selector} {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin-bottom: -$footer-height;
+      #{$container-selector} {
+        padding: 0 0 $footer-height 0;
+      } 
+    }
+    #{$footer-selector} {
+      height: $footer-height; 
+    }
+  }
+  
+  /**
+   * the sticky footer implementation
+   **/
+  @include sticky-footer(30px);
+  
+  /**
+   * other styling just to make the demo more appealing
+   **/
+
+  
+  html,body,#wrapper,#container,#footer {
+    width:100%;
+  }
+  #wrapper {
+    background: black;
+  }
+  ul,li ,a{
+    
+    font-family: 'Open sans', sans-serif;
+    color: white;
+  }
+  #footer {
+    background:  black;
+  }
+ 
